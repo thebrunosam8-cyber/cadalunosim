@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Cadastro de Alunos</title>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="cabecalho">
+            <h1>Cadastro de Alunos</h1>
+            <p>Cadastre, visualize e exclua alunos.</p>
+        </header>
+
+        <section class="card">
+
+            <form id="formAluno">
+
+                <div class="campo">
+                    <label for="nome">Nome do aluno</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        placeholder="Digite o nome do aluno"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="curso">Curso</label>
+                    <input
+                        type="text"
+                        id="curso"
+                        placeholder="Digite o curso"
+                        required
+                    >
+                </div>
+
+                <button id="btnSalvar" type="submit">
+                    Cadastrar aluno
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="card tabela-card">
+
+            <div class="titulo-tabela">
+                <h2>Alunos cadastrados</h2>
+                <span id="totalAlunos">0 alunos</span>
+            </div>
+
+            <div class="tabela-responsiva">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Posição</th>
+                            <th>Nome</th>
+                            <th>Curso</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="corpoTabela">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
